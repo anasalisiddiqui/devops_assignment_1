@@ -1,0 +1,164 @@
+<!-- projects.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anas Ali - Projects</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1em;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #projectList {
+      list-style: none;
+      padding: 0;
+    }
+
+    #projectList li {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    #projectFilter {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Anas Ali - Projects</h1>
+  </header>
+
+  <nav>
+    <a href="website.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+  </nav>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <input type="text" id="projectFilter" placeholder="Filter by Technology">
+    <ul id="projectList">
+      <li>
+        <strong>Trained a Multi-Class Image Classifier</strong><br>
+        Trained a multi-class image classifier model using Keras and TensorFlow.
+      </li>
+      <li>
+        <strong>Celebrity Image Classifier (Deep Learning)</strong><br>
+        Developed an image classifier specifically for recognizing celebrities using deep learning techniques.
+      </li>
+      <li>
+        <strong>Improved UDP with RDT 3.0 Protocols</strong><br>
+        Enhanced reliability and performance of UDP with RDT 3.0 protocols, focusing on congestion control and flow control.
+      </li>
+      <li>
+        <strong>Reliable Data Transfer</strong><br>
+        Implemented reliable data transfer protocols in a networking project.
+      </li>
+      <li>
+        <strong>Hotel Management System - Bari's Inn</strong><br>
+        Developed a comprehensive hotel management system website with a backend using HTML, CSS, JS, PHP, Bootstrap, and SQL.
+      </li>
+      <li>
+        <strong>Sorting Visualizer (C/C++)</strong><br>
+        Created a GUI for visualizing sorting algorithms using Tkinter and Matplotlib in C/C++.
+      </li>
+      <li>
+        <strong>Parallel Computing</strong><br>
+        Implemented Quick Sort, Merge Sort, and Binary Search on Docker Environment, focusing on parallel computing.
+      </li>
+      <li>
+        <strong>Parking Ticket System</strong><br>
+        Developed a parking ticket system using MASM assembly language.
+      </li>
+      <li>
+        <strong>Data Structure Analyzer</strong><br>
+        Analyzed Binary Search Tree and other data structures on a large dataset for insertion, deletion, and updation in C++.
+      </li>
+      <li>
+        <strong>StatsVerse</strong><br>
+        Developed a Cricket Stats Management System using Object-Oriented Programming in C++.
+      </li>
+      <li>
+        <strong>E-Medical Store</strong><br>
+        Developed a basic medical store application using the C programming language.
+      </li>
+      <li>
+        <strong>Clap Controlled Switch</strong><br>
+        Designed a hardware-based project for a clap-controlled switch.
+      </li>
+    </ul>
+    <script>
+      document.getElementById('projectFilter').addEventListener('input', function () {
+        var filter = this.value.toLowerCase();
+        var projects = document.getElementById('projectList').getElementsByTagName('li');
+
+        for (var i = 0; i < projects.length; i++) {
+          var text = projects[i].innerText.toLowerCase();
+          projects[i].style.display = text.includes(filter) ? 'list-item' : 'none';
+      }
+    });
+  </script>
+</section>
+
+<!-- ... (existing code) ... -->
+
+
+<!-- ... (existing code) ... -->
+
+
+  <footer>
+    &copy; 2023 Anas Ali - AI Developer
+  </footer>
+
+</body>
+
+</html>

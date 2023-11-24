@@ -1,3 +1,5 @@
+<!-- main.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,18 +12,19 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: linear-gradient(45deg, #333, #222);
+      color: #fff;
     }
 
     header {
-      background-color: #333;
+      background-color: #444;
       color: #fff;
       text-align: center;
       padding: 1em 0;
     }
 
     nav {
-      background-color: #444;
+      background-color: #555;
       color: #fff;
       text-align: center;
       padding: 1em 0;
@@ -38,13 +41,29 @@
     }
 
     footer {
-      background-color: #333;
+      background-color: #444;
       color: #fff;
       text-align: center;
       padding: 1em 0;
       position: fixed;
       bottom: 0;
       width: 100%;
+    }
+
+    #home {
+      background: linear-gradient(45deg, #333, #222);
+      padding: 2em;
+      text-align: center;
+    }
+
+    #home h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    #home p {
+      font-size: 1.2em;
+      line-height: 1.6em;
     }
   </style>
 </head>
@@ -56,49 +75,16 @@
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
+    <a href="website.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
   </nav>
 
   <section id="home">
     <h2>Welcome to My Portfolio</h2>
     <p>
-      My name is Anas Ali, and I am an AI Developer with 2 years of experience in the field. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      My name is Anas Ali, and I am an AI Developer with 2 years of experience in the field. Currently, I am associated with Codup and work remotely. I have worked on several personal projects in different technologies which you can find here.
     </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <input type="text" id="projectFilter" placeholder="Filter by Technology">
-    <ul id="projectList">
-      <li>C# Project 1</li>
-      <li>Java Project 2</li>
-      <li>Node.js Project 3</li>
-      <!-- Add more projects as needed -->
-    </ul>
-    <script>
-      document.getElementById('projectFilter').addEventListener('input', function () {
-        var filter = this.value.toLowerCase();
-        var projects = document.getElementById('projectList').getElementsByTagName('li');
-
-        for (var i = 0; i < projects.length; i++) {
-          var text = projects[i].innerText.toLowerCase();
-          projects[i].style.display = text.includes(filter) ? 'list-item' : 'none';
-        }
-      });
-    </script>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>9th Grade - Subject 1</li>
-      <li>10th Grade - Subject 2</li>
-      <li>11th Grade - Subject 3</li>
-      <!-- Add more courses as needed -->
-    </ul>
   </section>
 
   <footer>
